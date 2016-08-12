@@ -1,0 +1,458 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.clearfix::before, .clearfix::after {
+content: "";
+display: table;
+clear:both;
+}
+
+section {
+    width:100%;
+    min-height: 100px;
+}
+
+                    /*SEKCJA HEADER*/
+
+header {
+    width: 100%;
+    background-color: black;
+    height: 80px;
+
+}
+
+header {
+    .logo {
+        cursor: pointer;
+        color:white;
+        position: relative;
+        margin-top: 23px;
+        .upper-part {
+            position:absolute;
+            top:2px;
+            left:20px;
+        }
+        .lower-part {
+            position:absolute;
+            top:26px;
+            left:52px;
+        }
+        .logo-part {
+            font-size: 7px;
+        }
+        .logo-main-part {
+            div:first-child {
+                font-size: 25px;
+                float:left;
+            }
+            .logo-circle {
+                height: 13px;
+                width: 13px;
+                background-color: $seaGreen;
+                border-radius: 50%;
+                float:left;
+                margin-top: 12px;
+                margin-left: 1px;
+                margin-right: 2px;
+            }
+            div:last-child {
+                font-size: 25px;
+                float:left;
+            }
+        }
+    }
+    .contact-div {
+        width:225px;
+        height: 200px;
+        background-color: white;
+        border-radius: 50%;
+        margin-left: 335px;
+        margin-top: -165px;
+        position: relative;
+        .email {
+            font-weight: bold;
+            font-size: 10px;
+            top:150px;
+            right:32px;
+            position: absolute;
+        }
+        .number {
+            font-weight: bold;
+            font-size: 15px;
+            top:160px;
+            right:42px;
+            position: absolute;
+        }
+        .envelope {
+
+        }
+    }
+    .circle1 {
+        height: 25px;
+        width: 25px;
+        background-color: white;
+        border-radius: 50%;
+        margin-top: -50px;
+        margin-left: 559px;
+    }
+    .circle2 {
+        height: 18px;
+        width: 18px;
+        background-color: white;
+        border-radius: 50%;
+        margin-top: -27px;
+        margin-left: 590px;
+    }
+    .circle3 {
+        height: 14px;
+        width: 14px;
+        background-color: white;
+        border-radius: 50%;
+        margin-top: -20px;
+        margin-left: 615px;
+    }
+    nav {
+        float:right;
+        ul {
+            list-style-type: none;
+            margin-top: 10px;
+            li {
+                display: inline-block;
+                font-size: 12px;
+                margin-left: 20px;
+                a {
+                    text-decoration: none;
+                    color:white;
+                    &:link {
+                        color:white;
+                    }
+                    &:visited {
+                        color:white;
+                    }
+                    &:hover {
+                        color:$seaGreen;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+                            /*SEKCJA INTRO*/
+
+#intro {
+    height: 190px;
+    background-image: url('../images/Chocoklate_02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+    box-shadow: 0 5px 10px 2px lightgrey;
+    .intro-text {
+        height: 190px;
+        width: 450px;
+        float:left;
+        color:white;
+        margin-top: 30px;
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+        p {
+            margin-top: 15px;
+            width:500px;
+            font-size: 15px;
+            line-height: 25px;
+
+        }
+    }
+    .intro-image {
+        float: right;
+        img {
+            width: 450px;
+            height: 190px;
+        }
+    }
+}
+
+                    /*SEKCJA historical*/
+
+#historical {
+    .historical-text {
+        float:left;
+        width:640px;
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        img {
+            float: left;
+            margin-right: 10px;
+        }
+        p:first-of-type {
+            margin-top: 25px;
+            font-size: 13px;
+            float: left;
+            width: 340px;
+            line-height: 20px;
+            color: #838383;
+        }
+        p:last-of-type {
+            font-size: 13px;
+            line-height: 20px;
+            margin-top: 10px;
+            color: #838383;
+        }
+    }
+    .tags {
+        width: 240px;
+        float:right;
+        p {
+            float:left;
+            &:first-of-type {
+                color:#47959f;
+                font-size: 25px;
+                margin-top: 8px;
+            }
+            &:last-of-type {
+                margin-top: 13px;
+                font-size: 12px;
+                .normalg {
+                    font-size: 15px;
+                    color: #4da9c2;
+                }
+                .darkg {
+                    font-size:20px;
+                    color:#0d757e;
+                }
+                .lightg{
+                    color:#a8a8a8;
+                    font-size: 10px;
+                }
+                .green {
+                    font-size: 14px;
+                    color:#7fc1bf;
+                }
+            }
+        }
+    }
+}
+
+                            /*SEKCJA images*/
+#images {
+    background-color: black;
+    margin-top: 30px;
+    color:white;
+    .images-description {
+        float:left;
+        width: 150px;
+        p:first-of-type {
+            font-size: 30px;
+            margin-top: 25px;
+            font-weight: bold;
+        }
+        p:nth-of-type(2) {
+            font-size: 13px;
+            margin-top: 20px;
+        }
+        p:last-of-type {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    }
+    .gallery {
+        float:right;
+        width: 700px;
+        margin-top:67px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        .gallery-box {
+            float:left;
+            height: 200px;
+            width: 200px;
+            margin: 20px 0px 13px 33px;
+            background: black url("") center / cover no-repeat;
+            &:first-child{
+                background-image: url("../images/Chocoklate_15.jpg");
+            }
+            &:nth-child(2){
+                background-image: url("../images/Chocoklate_17.jpg");
+            }
+            &:nth-child(3){
+                background-image: url("../images/Chocoklate_20.jpg");
+
+            }
+            &:nth-child(4){
+                background-image: url("../images/Chocoklate_25.jpg");
+            }
+            &:nth-child(5){
+                background-image: url("../images/Chocoklate_26.jpg");
+            }
+            &:nth-child(6){
+                background-image: url("../images/Chocoklate_27.jpg");
+            }
+        }
+    }
+}
+
+                            /*SEKCJA bestfood*/
+#bestfood {
+    background: white;
+    .bigbackground-image {
+        margin-top: 30px;
+        width: 100%;
+        height:350px;
+        background: black url("../images/Chocoklate_31.jpg") center / cover no-repeat;
+    }
+    .description-part1 {
+        width: 770px;
+        p {
+            font-size: 14px;
+            color: #838383;
+            &:first-child {
+                font-size: 30px;
+                color:black;
+                margin-top: 25px;
+                font-weight: bold;
+            }
+            &:last-child {
+                margin-top: 30px;
+                line-height: 20px;
+            }
+        }
+    }
+    .description-part2 {
+        width: 770px;
+        p {
+            font-size: 14px;
+            color: #838383;
+            &:first-of-type {
+                margin-top: 30px;
+            }
+            &:last-of-type {
+                margin-top: 25px;
+
+            }
+        }
+        .globe {
+            width: 87px;
+            height: 87px;
+            background: white url("../images/Chocoklate_34.png") center / cover no-repeat;
+            margin-left: 808px;
+            margin-top: -90px;
+        }
+
+    }
+}
+
+                        /*SEKCJA yummy*/
+#yummy {
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    .yummy-img {
+        width: 50%;
+        height: 300px;
+        float:left;
+        background: black url("../images/Chocoklate_38.jpg") center / cover no-repeat;
+
+    }
+    .yummy-description {
+        margin-top: 10px;
+        float: right;
+        width: 50%;
+        p:first-child {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 40px;
+            padding-left: 145px;
+        }
+        p:nth-child(2) {
+            font-size: 14px;
+            margin-top: 30px;
+            padding-left: 90px;
+            line-height: 20px;
+        }
+        p:last-child {
+            margin-top: 20px;
+            padding-left: 378px;
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+                    /*footer*/
+footer {
+    background-color: white;
+    color: #a4a4a4;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    .left-part {
+        float: left;
+        width: 50%;
+        margin-top: 40px;
+        p:first-child {
+            span {
+                color:#dfdfdf;
+                margin-left: 10px;
+            }
+        }
+        p:last-child {
+            margin-top: 10px;
+            span {
+                color:#dfdfdf;
+                margin-left: 10px;
+            }
+        }
+    }
+    .right-part {
+        float:left;
+        width: 50%;
+        margin-top: 40px;
+        padding-left: 90px;
+        p:first-child {
+            span {
+                color:#dfdfdf;
+                margin-left: 10px;
+            }
+        }
+        p:last-child {
+            margin-top: 10px;
+            span {
+                color:#dfdfdf;
+                margin-left: 10px;
+            }
+        }
+    }
+    .lower-part {
+        color: #a4a4a4;
+        font-size: 10px;
+        font-family: 'Lato', sans-serif;
+        margin-top: 40px;
+        p {
+            text-align: center;
+            padding-top: 10px;
+            border-top: 1px solid #cdcdcd;
+            margin-bottom: 40px;
+        }
+    }
+
+}
